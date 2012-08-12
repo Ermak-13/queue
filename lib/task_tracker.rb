@@ -3,8 +3,6 @@ require 'bundler/setup'
 require 'thread'
 
 class TaskTracker
-	attr_writer :tasks
-
 	def initialize(*tasks)
 		@tasks = []
 		tasks.each { |task| @tasks.push task }
